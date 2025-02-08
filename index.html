@@ -3,92 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>My Notes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 2rem;
-        }
-        nav {
-            background-color: #34495e;
             padding: 1rem;
-            text-align: center;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        section {
-            padding: 2rem;
-            margin: 1rem;
-        }
-        .skills-list {
+        main {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            justify-content: space-around;
         }
-        .skill-item {
-            background-color: #ecf0f1;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
+        section {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            min-width: 250px;
         }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        textarea {
             width: 100%;
+            height: 150px;
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Notebook</h1>
-        <p>Hurt, Pain & Agony</p>
+        <h1>My Notes</h1>
     </header>
-
-    <nav>
-        <a href="#projects">Projects</a>
-        <a href="#books">Books</a>
-        <a href="#country">Countries</a>
-    </nav>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project-item">SwimAcrossColumbia</div>
-            <div class="project-item">Unplug Waters</div>
-            <div class="project-item">DadsArt</div>
-            <div class="project-item">American Rivers</div>
-            <div class="project-item">SparkNorthwest</div>
-        </div>
-    </section>
-
-    <section id="books">
-        <h2>Books</h2>
-        <p>Tuesdays with Morrie</p>
-        <p>The Power of Habit</p>
-        <p>Steve Jobs</p>
-        <p>Old Friends</p>
-    </section>
-
-    <section id="country">
-        <h2>Countries</h2>
-        <p>China</p>
-        <p>United States</p>
-        <p>Spain</p>
-    </section>
+    <main>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>SwimAcrossColumbia</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+            <textarea placeholder="Add new projects here..."></textarea>
+        </section>
+        <section id="books">
+            <h2>The Books I Like</h2>
+            <ul>
+                <li>Tuesday with Morrie</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+            </ul>
+            <textarea placeholder="Add new books here..."></textarea>
+        </section>
+        <section id="notes">
+            <h2>Notes Taking</h2>
+            <textarea placeholder="Write your notes here..."></textarea>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Yawei Hao. All rights reserved.</p>
