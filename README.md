@@ -1,2 +1,2 @@
 # yaweihao.github.io
-websites 2
+A fun project
